@@ -1,0 +1,24 @@
+name = fordere_theme
+description = Fordere Template
+core = 7.x
+engine = phptemplate
+
+; Regions
+
+regions[help]           = Help
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[navigation]     = Navigation bar
+regions[highlighted]    = Highlighted
+regions[content]        = Content
+regions[header]         = Header
+regions[footer]         = Footer
+regions[bottom]         = Page bottom
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+regions[menu1]    		= Hauptmenue
+regions[menu2]    		= Secondmenue
+
+stylesheets[all][] = styles/style.css
+
+scripts[] = tablesorter.js

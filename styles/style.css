@@ -1,0 +1,782 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	overflow-y: scroll;
+}
+
+html,body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Geneva, 'Lucida Sans Unicode', arial, Helvetica,
+		sans-serif;
+}
+
+#forderadmin_payment {
+	width: 100%;
+}
+
+#contentwrap {
+	float: left;
+	background: transparent;
+}
+
+#sidebar {
+	float: left;
+	width: 250px;
+}
+
+.bracket {
+	border-collapse: collapse;
+}
+
+.bracket td {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.bottomLine {
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
+	padding-top: 12px;
+}
+
+.leftLine {
+	border-left: 1px solid black;
+}
+
+.fordere_matches_teamname {
+	width: 200px;
+}
+
+.fordere_matches_nogame {
+	background: transparent;
+	border: 1px solid black;
+	padding: 6px;
+	width: 20px;
+	text-align: center;
+}
+
+.fordere_matches_created {
+	background: transparent;
+	border: 1px solid black;
+	padding: 6px;
+	width: 20px;
+	text-align: center;
+}
+
+.fordere_matches_planned {
+	background: yellow;
+	border: 1px solid black;
+	padding: 6px;
+	width: 20px;
+	text-align: center;
+}
+
+.fordere_matches_teamheader {
+	height: 165px;
+	vertical-align: bottom;
+}
+
+.fordere_matches_table{
+}
+
+ .rotate_text {
+	transform: rotate(-90deg);
+	transform-origin: top left;
+	-moz-transform: rotate(-90deg);
+	-moz-transform-origin: top left;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: top left;
+	-o-transform: rotate(-90deg);
+	-o-transform-origin: top left;
+	display: inline-block;
+	white-space: nowrap;
+	line-height: 1.5;
+}
+
+.rotate_outer
+{
+	display: inline-block;
+	width: 1.5em;
+}
+
+
+.fordere_matches_finished {
+	background: #00FF00;
+	border: 1px solid black;
+	padding: 2px;
+	width: 20px;
+	text-align: center;
+}
+
+body {
+	background-image: url(../images/bg.png);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+h1 {
+	color: #0a6da8;
+	margin: 0px;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 4px;
+	font-size: 16px;
+	border-bottom-color: rgb(204, 204, 204);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+h3 {
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 4px;
+}
+
+dl dt {
+	font-size: 14px;
+}
+
+dl dd {
+	font-size: 14px;
+}
+
+.field {
+	font-size: 14px;
+}
+
+.field-label-above {
+	display: inline;
+}
+
+#top {
+	background-image: url(../images/top.jpg);
+	height: 67px;
+	text-align: right;
+	padding: 0px;
+}
+
+.mainmenue {
+	background-image: url(../images/mainmenue.jpg);
+	height: 26px;
+}
+
+#banner {
+	background-image: url(../images/banner.jpg);
+	height: 156px;
+}
+
+.submenue {
+	background-image: url(../images/submenue.jpg);
+	background-repeat: no-repeat;
+}
+
+.submenue ul {
+	margin-bottom: 0;
+	height: 26px;
+}
+
+.submenue li {
+	display: inline;
+	margin-left: 5px;
+	padding-right: 20px;
+	margin-bottom: 0;
+	height: 26px;
+}
+
+#maincontainer {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+}
+
+#content {
+	min-height: 600px;
+	padding-bottom: 44px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#footer {
+	bottom: 0;
+	position: absolute;
+	background-image: url(../images/footer.jpg);
+	height: 34px;
+	position: absolute;
+	width: 100%;
+}
+
+.mainmenue {
+	list-style-type: none;
+	padding-left: 0px;
+	margin: 0;
+}
+
+.mainmenue ul {
+	padding-top: 7px;
+}
+
+.mainmenue li {
+	display: inline;
+	margin-left: 5px;
+	padding-right: 20px;
+}
+
+.mainmenue a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Aharoni;
+	color: #1775a5;
+}
+
+.submenue a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Aharoni;
+	color: #1775a5;
+}
+
+.mainmenue a.active-trail {
+	color: red;
+}
+
+.mainmenue a.active {
+	color: red;
+}
+
+.submenue a.active-trail {
+	color: red;
+}
+
+.submenue a:hover {
+	color: #F00;
+}
+
+.mainmenue a:hover {
+	color: #F00;
+}
+
+#secondmenue {
+	list-style-type: none;
+	padding: 0;
+}
+
+#secondmenue a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Aharoni;
+	color: #1775a5;
+}
+
+#secondmenue a:hover {
+	color: #F00;
+}
+
+#secondmenue ul {
+	padding-top: 10px;
+}
+
+.loginform {
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.loginform input {
+	margin: 0px;
+	margin-right: 2px;
+}
+
+.loginformlink {
+	color: red;
+	line-height: 10px;
+	margin-top: 3px;
+	font-size: 10px;
+	padding-right: 10px;
+}
+
+.loginformlink a {
+	text-decoration: none;
+}
+
+.loginformlink a:VISITED {
+	text-decoration: none;
+	color: red;
+}
+
+#loginbar div div {
+	float: left;
+	vertical-align: top;
+	margin: 0;
+}
+
+#loginbar {
+	width: auto;
+	float: right;
+	height: 25px;
+	margin: 0x;
+	margin-top: 2px;
+	font-size: 12px;
+	padding-right: 2px;
+}
+
+#loginbar input {
+	margin-right: 2px;
+}
+
+#loginlinks {
+	color: white;
+	clear: both;
+	font-size: 12px;
+	margin: 0px;
+	padding-right: 2px;
+}
+
+#loginlinks a {
+	text-decoration: none;
+	color: white;
+}
+
+#loginbar,#loginlinks a:VISITED {
+	text-decoration: none;
+	color: white;
+}
+
+#loginlinks a:HOVER {
+	text-decoration: underline;
+}
+
+#loginbar a {
+	text-decoration: none;
+	color: white;
+}
+
+#loginbar a:VISITED {
+	text-decoration: none;
+	color: white;
+}
+
+#loginbar a:HOVER {
+	text-decoration: underline;
+}
+
+#logincontainer {
+	float: right;
+	width: 400px;
+}
+
+.newscontainer {
+	width: 300px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+.newsbody {
+	background-image: url(../images/newsbody.jpg);
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 8px;
+	padding-right: 10px;
+	min-height: 130px;
+	background-repeat: no-repeat;
+	font-size: 12px;
+}
+
+.newsbody div div p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.newsimageplaceholder {
+	min-width: 60px;
+	min-height: 60px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	float: left;
+}
+
+.newstitle {
+	background-image: url(../images/newstitle.jpg);
+	margin: 0px;
+	min-height: 24px;
+	color: white;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-top: 4px;
+	background-repeat: no-repeat;
+}
+
+.newsdate {
+	font-size: 10px;
+	margin: 0;
+	border: none;
+}
+
+.centered a img {
+	
+}
+
+.pane-content img {
+	background: red;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* .faq-answer {
+	margin-top: 5px;
+	margin-left: 0px;
+	padding: 5px;
+	padding-top: 0px;
+	background: #e1edf5;
+	border: 1px solid #1775a5;
+}
+
+.faq-question {
+	margin-left: 0px;
+	padding: 0px;
+}
+
+.faq-question a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+.faq-question a:hover {
+	color: red;
+}
+ */
+.form-item {
+	font-size: 14px;
+}
+
+#edit-picture {
+	background: #e1edf5;
+	border: 1px solid #1775a5;
+}
+
+.description {
+	font-style: italic;
+}
+
+.forum-table-wrap h2 {
+	border: none;
+}
+
+.form-item {
+	margin: 0px;
+	padding: 0px;
+}
+
+.result {
+	float: left;
+}
+
+.resultenter {
+	float: left;
+}
+
+.champleft {
+	float: left;
+	border-right: 1px solid black;
+	padding-right: 10px;
+}
+
+.champright {
+	float: right;
+}
+
+.dashboardtable {
+	width: 90%;
+	border: 1px solid white;
+}
+
+.dashboardtable th {
+	border: 1px solid white;
+	color: white;
+	background: #1775a5;
+	line-height: 20px;
+	padding: 3px;
+}
+
+.dashboardtable td {
+	border: 1px solid white;
+	background: #e1edf5;
+	line-height: 24px;
+	padding: 3px;
+	vertical-align: top;
+	background: #e1edf5;
+	line-height: 24px;
+	padding: 3px;
+}
+
+.container-inline-date>.form-item {
+	padding: 0px;
+	border: none;
+}
+
+.container-inline-date .date-padding {
+	padding: 0px;
+	padding-top: 8px;
+}
+
+.teamcontainer .left {
+	float: left;
+	width: 40%;
+}
+
+.teamcontainer .right {
+	float: left;
+}
+
+.hometeamcol {
+	width: 30%;
+}
+
+.guestteamcol {
+	width: 30%;
+}
+
+.leaguetable {
+	width: 100%;
+	border: 1px solid white;
+}
+
+.leaguetable td {
+	border: 1px solid white;
+	background: #e1edf5;
+	line-height: 24px;
+	padding: 3px;
+}
+
+.leaguetable th {
+	border: 1px solid white;
+	color: white;
+	background: #1775a5;
+	line-height: 20px;
+	padding: 3px;
+}
+
+.cuptable th {
+	border: 1px solid white;
+	color: white;
+	background: #1775a5;
+	line-height: 20px;
+	padding: 3px;
+}
+
+.rankcol {
+	width: 7%;
+}
+
+.teamnamecol {
+	
+}
+
+.gamecountcol {
+	width: 10%
+}
+
+.statecol {
+	width: 5%;
+	text-align: center;
+}
+
+.pointcol {
+	width: 10%
+}
+
+.svcol {
+	width: 10%;
+}
+
+.leaguetable .leaguetableline {
+	background: #FFC2D1;
+}
+
+.playercol {
+	width: 25%;
+}
+
+.smalltable {
+	font-size: xx-small;
+}
+
+ul {
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding-left: 0px;
+	margin-left: 20px;
+}
+
+.cuptable {
+	width: 80%
+}
+
+.team1 {
+	text-align: right;
+	width: 47%
+}
+
+.vs {
+	text-align: center;
+	width: 6%;
+	background: #e1edf5;
+}
+
+.team2 {
+	text-align: left;
+	width: 47%;
+}
+
+.teamwin {
+	background: green;
+}
+
+.teamlose {
+	background: red;
+	border: 1px solid white;
+}
+
+.notplayed {
+	background: #e1edf5;
+}
+
+.cuptable td {
+	border: 1px solid white;
+	line-height: 24px;
+	padding: 3px;
+}
+
+.doneloc {
+	width: 350px;
+	float: left;
+	color: #1775a5;
+	font-size: small;
+}
+
+.commingloc {
+	width: 135px;
+	float: left;
+	color: #1775a5;
+	font-size: small;
+}
+
+.commingtime {
+	width: 65px;
+	float: left;
+	color: #1775a5;
+	font-size: small;
+}
+
+.commingteam {
+	float: left;
+	color: #1775a5;
+	font-size: small;
+}
+
+.commingcomment {
+	color: gray;
+	font-size: x-small;
+	display: block;
+}
+
+.comminggamescontainer h3 {
+	font-style: normal;
+	font-size: small;
+}
+
+.comminggamescontainer a {
+	text-decoration: none;
+}
+
+.comminggamescontainer a:hover {
+	color: red;
+}
+
+.comminggame {
+	background: #e1edf5;
+	padding: 3px;
+	margin-bottom: 1px;
+}
+
+.win {
+	font-weight: bold;
+}
+
+a:VISITED {
+	color: #1775a5;
+}
+
+a {
+	color: #1775a5;
+}
+
+.game_teams {
+	font-size: 24px;
+}
+
+.game_details {
+	font-size: 12px;
+}
+
+.game_teams img {
+	max-height: 140px;
+	max-width: 140px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+	border: 1px solid black;
+}
+
+.userphoto {
+	max-height: 140px;
+	max-width: 140px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+	border: 1px solid black;
+}
+
+.game_hometeam {
+	float: left;
+	width: 30%;
+}
+
+.game_guestteam {
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+
+.game_result {
+	text-align: center;
+	float: left;
+	width: 15%;
+}
+
+.game_teammembers {
+	font-size: 14px;
+}
+
+.game_innerimage {
+	margin-left: 5px;
+}
+
+.game_actionlink {
+	font-size: 12px;
+}
